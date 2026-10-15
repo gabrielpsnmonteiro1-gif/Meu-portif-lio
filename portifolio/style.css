@@ -1,0 +1,149 @@
+:root {
+    --bg-primary: #0D1117;
+    --bg-secondary: #161B22;
+    --border-color: #30363D;
+    --text-main: #F0F6FC;
+    --text-muted: #8B949E;
+    --accent-green: #2EA043; /* Verde principal */
+    --accent-hover: #3FB950;  /* Verde para o hover */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Efeito de fundo com Grid sutil estilo GitHub */
+.bg-grid {
+    background-image: 
+        linear-gradient(to right, rgba(48, 54, 61, 0.15) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(48, 54, 61, 0.15) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
+
+/* Foto de Perfil */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid var(--accent-green);
+    object-fit: cover;
+}
+
+/* Badge do SENAI */
+.senai-badge {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 8px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.senai-logo {
+    height: 18px;
+    width: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Cards de Skills, Curiosidades e Projetos */
+.custom-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-green);
+    box-shadow: 0 8px 24px rgba(46, 160, 67, 0.15);
+}
+
+/* Badges de Linguagem/Tecnologia */
+.tech-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background-color: rgba(46, 160, 67, 0.1);
+    color: var(--accent-green);
+    border: 1px solid rgba(46, 160, 67, 0.3);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.skill-icon {
+    font-size: 1.8rem;
+    color: var(--accent-green);
+    margin-bottom: 8px;
+}
+
+/* Caixa de Contato */
+.contact-box {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+.form-control, .form-control:focus {
+    background-color: #0D1117;
+    border-color: var(--border-color);
+    color: var(--text-main);
+}
+
+.form-control:focus {
+    border-color: var(--accent-green);
+    box-shadow: 0 0 0 0.25rem rgba(46, 160, 67, 0.25);
+}
+
+/* Botões Customizados */
+.btn-green {
+    background-color: var(--accent-green);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-green:hover {
+    background-color: var(--accent-hover);
+    color: #ffffff;
+    transform: scale(1.01);
+}
+
+.btn-outline-custom {
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.btn-outline-custom:hover {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+    background-color: rgba(46, 160, 67, 0.05);
+}
+
+/* Animação suave de entrada */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
