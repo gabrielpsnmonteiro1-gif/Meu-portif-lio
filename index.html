@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Monteiro | Portfólio & Showroom</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Inter & JetBrains Mono) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg">
+</head>
+<body class="bg-grid">
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom border-secondary bg-dark bg-opacity-75 backdrop-blur">
+        <div class="container">
+            <a class="navbar-brand font-mono fw-bold text-success" href="#">&lt;Gabriel.dev/&gt;</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container py-5 mt-5 fade-in">
+        
+        <!-- SEÇÃO DE APRESENTAÇÃO / SOBRE MIM -->
+        <section id="sobre" class="row justify-content-center text-center mb-5 pt-4">
+            <div class="col-lg-8">
+                <!-- Foto puxada diretamente do GitHub do Gabriel -->
+                <img src="https://github.com/gabrielpsnmonteiro1-gif.png" alt="Gabriel Monteiro" class="rounded-circle profile-img mb-3 shadow">
+                <h1 class="fw-bold mb-2">Gabriel Monteiro</h1>
+                <p class="text-muted font-mono mb-3">&lt; Desenvolvedor/&gt;</p>
+                
+                <!-- Badge SENAI com Logo Oficial -->
+                <div class="mb-3">
+                    <span class="senai-badge">
+                        <img src="imagens/SENAI_Sao_Paulo_logo.png" alt="SENAI" class="senai-logo">
+                        <span class="small text-muted font-mono">Formação Técnica em TI — SENAI</span>
+                    </span>
+                </div>
+
+                <p class="text-secondary mb-4">
+                    Estudante de desenvolvimento no SENAI, criando soluções modernas, eficientes e conectando linhas de código a projetos reais.
+                </p>
+                
+                <!-- Links de Redes -->
+                <div class="d-flex justify-content-center gap-3">
+                    <a id="github-profile-link" href="https://github.com/gabrielpsnmonteiro1-gif" target="_blank" class="btn btn-outline-custom btn-sm px-3">
+                        <i class="fab fa-github me-2"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-outline-custom btn-sm px-3">
+                        <i class="fab fa-linkedin me-2"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE HABILIDADES (SKILLS) -->
+        <section id="skills" class="mb-5 pt-4">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="h4 fw-bold m-0"><i class="fas fa-laptop-code text-success me-2"></i> Habilidades & Tecnologias</h2>
+            </div>
+            <div class="row g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="custom-card p-3">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h3 class="h6 fw-bold m-0">HTML5 / CSS3</h3>
+                        <span class="text-muted small">Layout & Estilo</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="custom-card p-3">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h3 class="h6 fw-bold m-0">JavaScript</h3>
+                        <span class="text-muted small">Lógica & Dinamismo</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="custom-card p-3">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <h3 class="h6 fw-bold m-0">Bootstrap</h3>
+                        <span class="text-muted small">Responsividade</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="custom-card p-3">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <h3 class="h6 fw-bold m-0">Git & GitHub</h3>
+                        <span class="text-muted small">Versionamento</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PROJETOS (SHOWROOM DINÂMICO VIA GITHUB) -->
+        <section id="projetos" class="mb-5 pt-4">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="h4 fw-bold m-0"><i class="fas fa-code text-success me-2"></i> Projetos em Destaque</h2>
+                <div class="ms-auto text-muted font-mono small">Sincronizado via GitHub API</div>
+            </div>
+
+            <!-- Onde o JavaScript injeta os projetos automaticamente -->
+            <div class="row g-4" id="projects-container">
+                <!-- Carregando dinamicamente via script.js -->
+            </div>
+
+            <!-- Botão Carregar Mais -->
+            <div class="text-center mt-4">
+                <button id="btn-load-more" class="btn btn-outline-custom font-mono px-4 d-none">
+                    Carregar Mais Projetos <i class="fas fa-chevron-down ms-2"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CURIOSIDADES -->
+        <section id="curiosidades" class="mb-5 pt-4">
+            <div class="d-flex align-items-center mb-4">
+                <h2 class="h4 fw-bold m-0"><i class="fas fa-lightbulb text-success me-2"></i> Curiosidades</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="custom-card p-3">
+                        <h3 class="h6 fw-bold text-success mb-2"><i class="fas fa-graduation-cap me-2"></i> Aluno SENAI</h3>
+                        <p class="text-secondary small m-0">Foco total em aprender fazendo, com metodologias voltadas para o mercado de tecnologia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card p-3">
+                        <h3 class="h6 fw-bold text-success mb-2"><i class="fas fa-terminal me-2"></i> Código Limpo</h3>
+                        <p class="text-secondary small m-0">Apreciador de boas práticas, organização de repositórios e produtividade.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="custom-card p-3">
+                        <h3 class="h6 fw-bold text-success mb-2"><i class="fas fa-laptop me-2"></i> Prática Diária</h3>
+                        <p class="text-secondary small m-0">Desenvolvendo e aprimorando novos projetos continuamente no GitHub.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section id="contato" class="row justify-content-center mb-5 pt-4">
+            <div class="col-lg-8">
+                <div class="contact-box p-4 p-md-5">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold mb-2">Vamos Trabalhar Juntos?</h2>
+                        <p class="text-muted small">Tem alguma dúvida, proposta ou quer conversar sobre tecnologia? Envie uma mensagem!</p>
+                    </div>
+                    
+                    <!-- Alerta de sucesso oculto -->
+                    <div id="form-success-msg" class="alert alert-success d-none text-center mb-3">
+                        <i class="fas fa-check-circle me-2"></i> Mensagem enviada com sucesso!
+                    </div>
+
+                    <!-- Formulário integrado com Formspree (substitua o action pelo seu endpoint caso deseje receber os emails) -->
+                    <form id="contact-form" action="https://formspree.io/f/meaevawq" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label small text-muted font-mono">Seu Nome</label>
+                            <input type="text" name="name" class="form-control" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small text-muted font-mono">Seu E-mail</label>
+                            <input type="email" name="email" class="form-control" placeholder="seu-email@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small text-muted font-mono">Assunto</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Qual é o assunto?">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small text-muted font-mono">Mensagem</label>
+                            <textarea name="message" class="form-control" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                            <a href="https://github.com/gabrielpsnmonteiro1-gif" target="_blank" class="text-muted text-decoration-none small font-mono">
+                                <i class="fab fa-github me-1"></i> Ver Perfil no GitHub
+                            </a>
+                            <button type="submit" id="btn-submit" class="btn btn-green w-100 w-md-auto px-4 py-2">
+                                <i class="fas fa-paper-plane me-2"></i> Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- RODAPÉ -->
+        <footer class="text-center pt-4 border-top border-secondary text-muted small font-mono">
+            <p>© <span id="current-year"></span> Gabriel Monteiro — Desenvolvido com apoio da formação no SENAI.</p>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arquivo JS Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
